@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="/node_modules/vue/dist/vue.cjs.js"></script> -->
+    <!-- <script src="./../node_modules/vue/dist/vue.global.js"></script> -->
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <form class="main-form" @submit="submitForm" action="/Users/User/Desktop/Project/app/grid.html" method="post">
+            <div class="form-group">
+                <div class="label">Vehicle Name</div>
+                <div class="input-container">
+                    <input class="form-control" type="text" v-model="vehicleName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">Vehicle Type</div>
+                <div class="input-container">
+                    <select v-model="vehicleType" class="form-control">
+                        <option disabled value="">Please select type</option>
+                        <option>Car</option>
+                        <option>Van</option>
+                        <option>Truck</option>
+                        <option>Container</option>
+                        <option>Trailer</option>
+                        <option>Dumper</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">Model</div>
+                <div class="input-container">
+                    <select v-model="vehicleModel" class="form-control">
+                        <option disabled value="">Please select model</option>
+                        <option>BMW</option>
+                        <option>Audi</option>
+                        <option>Volkswagen</option>
+                        <option>Citroen</option>
+                        <option>Opel</option>
+                        <option>Honda</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="label">Licence plate</div>
+                <div class="input-container">
+                    <input type="text" v-model="licencePlate" class="form-control">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="label">Last registration</div>
+                <div class="input-container">
+                    <input type="date" v-model="lastRegistration" class="form-control">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="label">Registration submition</div>
+                <div class="input-container">
+                    <input type="date" v-model="registrationSubmition" class="form-control">
+                </div>
+            </div>
+
+            <div class="submit-container">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.main-form {
+    width: 50%;
+    margin: auto;
+}
+
+.form-group {
+    width: 100%;
+    padding: 12px 8px;
+}
+
+.label {
+    color: #3c3c3c;
+}
+
+.form-control {
+    width: 100%;
+    padding: 4px 0px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  body {
+      background-color: yellowgreen;
+  }
